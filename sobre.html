@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/usuario.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark"
+        style="background-color:  #0088CC; border-bottom: 1px solid #FFCC00;">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="index.html">VitalFit</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <strong><span class="navbar-text fs-6"> A Jornada do Movimento!</span></strong>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Tópicos</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="alimentacao.html">Alimentação</a>
+                            <a class="dropdown-item" href="exercicios.html">Exercícios e Fitness</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sobre.html" aria-current="page">Sobre
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="modal" data-bs-target="#modalUsuario">Usuário</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5 content__sobre" style=" background-color: #52C787; color: #FFF;">
+        <div class="container">
+            <h2 class="text-center">Sobre Nós</h2>
+            <p class="lead">
+                Bem-vindo ao <strong>VitalFit: A Jornada do Movimento</strong>! Somos uma comunidade dedicada a promover
+                um estilo de vida saudável e ativo por meio da atividade física e exercícios.
+            </p>
+            <p>
+                Acreditamos que o movimento é essencial para o nosso bem-estar físico, mental e emocional. Nosso
+                objetivo é inspirar e motivar pessoas de todas as idades e níveis de condicionamento físico a incorporar
+                a atividade física em suas rotinas diárias.
+            </p>
+            <p>
+                Oferecemos uma variedade de recursos, orientações e dicas práticas para ajudá-lo a iniciar e manter um
+                estilo de vida ativo. Nossos treinadores e especialistas estão aqui para fornecer orientações
+                personalizadas e acompanhar sua jornada de saúde e fitness.
+            </p>
+            <p>
+                No VitalFit, acreditamos na importância da diversão e do prazer na prática de exercícios. Queremos
+                tornar o processo de se exercitar agradável e recompensador, para que você possa desfrutar de todos os
+                benefícios físicos e mentais que o movimento proporciona.
+            </p>
+            <p>
+                Junte-se a nós nesta jornada do movimento! Explore nossos artigos informativos, participe de nossos
+                programas de exercícios e compartilhe suas conquistas com nossa comunidade. Juntos, podemos alcançar um
+                estilo de vida mais saudável e vibrante!
+            </p>
+        </div>
+    </section>
+
+
+    <footer class="text-center py-3 fixed-bottom" style="border-top: 1px solid #FFCC00;">
+        <div class="container">
+            <p>&copy; 2023 VitalFit - A Jornada do Movimento. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalUsuario" tabindex="-1" aria-labelledby="modalUsuario" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="login__container">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="login__title-text">
+                            <div class="login__title login">
+                                Log in
+                            </div>
+                            <div class="login__title signup">
+                                Sign up
+                            </div>
+                        </div>
+                        <div class="login__div-form">
+                            <div class="login__slide-controls">
+                                <input type="radio" name="slide" id="login" checked>
+                                <input type="radio" name="slide" id="signup">
+                                <label for="login" class="login__slide login">Log in</label>
+                                <label for="signup" class="login__slide signup">Sign up</label>
+                                <div class="login__slider-tab"></div>
+                            </div>
+                            <div class="login__form-campos">
+                                <form action="login.php" method="post" class="login">
+                                    <div class="login__campo">
+                                        <input type="email" placeholder="Endereço de Email" required>
+                                    </div>
+                                    <div class="login__campo">
+                                        <input type="password" placeholder="senha" required>
+                                    </div>
+                                    <div class="login__senha-link">
+                                        <a href="#">Esqueceu a senha?</a>
+                                    </div>
+                                    <div class="login__campo btn">
+                                        <div class="login__btn-layer"></div>
+                                        <input type="submit" value="Login">
+                                    </div>
+                                    <div class="login__signup-link">
+                                        Não possui conta?<a href="">cadastre-se agora</a>
+                                    </div>
+                                </form>
+                                <form action="login.php" method="post" class="signup">
+                                    <div class="login__campo">
+                                        <input type="email" placeholder="Endereço de Email" required>
+                                    </div>
+                                    <div class="login__campo">
+                                        <input type="password" placeholder="Senha" required>
+                                    </div>
+                                    <div class="login__campo">
+                                        <input type="password" placeholder="Confirme a senha" required>
+                                    </div>
+                                    <div class="login__campo btn">
+                                        <div class="login__btn-layer"></div>
+                                        <input type="submit" value="Signup">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/usuario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

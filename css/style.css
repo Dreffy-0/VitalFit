@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+footer{
+    color: #fff;
+    background-color: #0088CC;
+    height: 4rem;
+}
+.carrousel_img{
+    max-height: 90vh;
+    min-width: 100vw;
+    background-size: cover;
+}
+.content__text{
+    background-color: #52C787;
+}
+.content__sobre{
+    height: 90vh;
+}
